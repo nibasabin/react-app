@@ -1,0 +1,32 @@
+.signUpFormContainer {
+  background: white;
+}
+.signUpFormContainer .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.signUpForm-title {
+  text-align: center;
+  margin-top: 30px;
+}
+.signUpForm {
+  padding: 20px;
+}
+tfoot {
+  background: red;
+  width: 100%;
+}
+.submit,
+.cancel {
+  margin: 5px 0px;
+  height: 25px;
+  color: white;
+  background-color: rgb(157, 40, 207);
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  width: fit-content;
+}

@@ -1,0 +1,32 @@
+.pageContainer{
+    display:flex;
+    background-color: none;
+    height: 100vh;
+    padding:0px;
+}
+.headerRow{
+    /* background-color: red; */
+    width:100%;
+    height:35px;
+    margin:0px 0px;
+    display:flex;
+  
+}
+
+.headerRow > .rightColumn{
+    /* background-color: orange; */
+    display:flex;
+    justify-content: flex-end;
+
+}
+.headerRow > .leftColumn{
+padding:0px;
+}
+
+#header {
+    padding:0px;
+    margin-top:10px;
+    background-color: rgb(123, 104, 231);
+    height:35px;
+    position:relative;
+}

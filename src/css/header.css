@@ -1,0 +1,9 @@
+.sign-up-button, .login-button {
+    margin:5px 0px;
+    height:25px;
+    color: white;
+    background-color: rgb(157, 40, 207);
+    font-size: 12px;
+    display:flex;
+    text-align: center;
+}
