@@ -1,3 +1,12 @@
+.root{
+    background-image: url(../images/background.jpg) ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding:10px;
+    
+}
 .pageContainer{
     display:flex;
     background-color: none;

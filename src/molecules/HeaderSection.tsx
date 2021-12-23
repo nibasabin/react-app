@@ -3,6 +3,7 @@ import { LogInPage } from "../organisms/LogInPage";
 import { SignUpPage } from "../organisms/SignUpPage";
 import { useState } from 'react';
 import '../css/header.css';
+import { SocialMediaBar } from "../atom/SocialMediaBar";
 
 
 export const HeaderSection = () => {
@@ -19,19 +20,21 @@ export const HeaderSection = () => {
     }
 
     return (<>
-        <div id="header" className="container">
-            <div className="row headerRow">
-                <div className="col-6 leftColumn"></div>
-                <div className="col-6 rightColumn">
-                    <Button title="Sign Up" type="button" className="sign-up-button" onClick={() => { createUser() }} />
-                    {
-                        showSignUpForm && <SignUpPage displayHandler={setShowSignUpForm} />
-                    }
+    <div className='header'>
+        <div className='row'>
+            <div className="col-6 leftColumn"><SocialMediaBar /></div>
+            <div className="col-6 rightColumn">
+                <Button title="Sign Up" type="button" className="sign-up-button" onClick={() => { createUser() }} />
+                {
+                    showSignUpForm && <SignUpPage displayHandler={setShowSignUpForm} />
+                }
 
-                    <Button title="Log In" type="button" className="login-button" onClick={() => { displayLoginPage() }} />
-                    {logInButtonClicked && <LogInPage />}
-                </div>
+                <Button title="Log In" type="button" className="login-button" onClick={() => { displayLoginPage() }} />
+                {logInButtonClicked && <LogInPage />}
             </div>
         </div>
+        </div>
+
+
     </>)
 }

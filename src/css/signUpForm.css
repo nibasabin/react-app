@@ -1,32 +1,38 @@
-.signUpFormContainer {
-  background: white;
-}
-.signUpFormContainer .row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-}
 
 .signUpForm-title {
   text-align: center;
   margin-top: 30px;
 }
 .signUpForm {
-  padding: 20px;
+  
+  color:white;
+  font-family: sans-serif;
+  font-size: 16px;
+  
 }
 tfoot {
-  background: red;
   width: 100%;
+}
+tr {
+  width:400px;
+  
+}
+.signUpFormButtons{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
 }
 .submit,
 .cancel {
-  margin: 5px 0px;
-  height: 25px;
-  color: white;
-  background-color: rgb(157, 40, 207);
-  font-size: 12px;
-  display: flex;
-  text-align: center;
-  width: fit-content;
-}
+background-color:#fa7f21;
+width:100px;
+color:white;
+border-radius: 20px;
+border-color:white;
+border-width: 1px;
+font-family: sans-serif;
+font-size: 12px;
+font-weight: bold;
+} 

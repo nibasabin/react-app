@@ -1,4 +1,5 @@
 
+import { SocialMediaBar } from '../atom/SocialMediaBar';
 import { HeaderSection } from '../molecules/HeaderSection';
 
 interface MainPageProps {
@@ -9,9 +10,8 @@ interface MainPageProps {
 
 export const MainPage = (mainPageProps: MainPageProps) => {
     return (
-        <div className="container pageContainer">
-
-            <HeaderSection />
+        <div className="root">
+            <HeaderSection/>
         </div>
 
     )

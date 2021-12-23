@@ -24,8 +24,7 @@ export const SignUpPage = ({ displayHandler }: SignUpPageProp) => {
     }
 
     return (
-        <PopUpWindow parentStateUpdater={displayHandler}>
-            <div className="signUpFormContainer">
+        <PopUpWindow parentStateUpdater={displayHandler} className={'popUpImage'}>
 
 
                 <div className="signUpForm">
@@ -35,31 +34,42 @@ export const SignUpPage = ({ displayHandler }: SignUpPageProp) => {
                             <tbody>
                                 <tr>
                                     <td><label>First Name:</label></td>
+                                </tr>
+                                <tr>
                                     <td><input type="text" name="firstName"></input></td>
                                 </tr>
                                 <tr>
                                     <td><label>Last Name:</label></td>
+                                </tr>
+
+                                <tr>
+
                                     <td><input type="text" name="lastName"></input></td>
                                 </tr>
                                 <tr>
                                     <td><label>Date Of Birth:</label></td>
-                                    <td><input type="date" name="dateOfBirth"></input></td>
                                 </tr>
                                 <tr>
-                                    <td><label>Email Id:</label> </td>
+
+                                    <td><input type="date" name="dateOfBirth"></input></td>
+                                </tr>
+                                <tr><td><label>Email Id:</label> </td></tr>
+                                <tr>
+
                                     <td><input type="email" name="emailId"></input></td>
                                 </tr>
+                                <tr></tr>
                             </tbody>
                         </table>
                         <br />
-                        <div className='row'>
+                        <div className= 'signUpFormButtons'>
                             <Button title="Submit" className='submit' type="Submit" onClick={() => { }}></Button>
                             &nbsp;
-                            <Button title="Cancel" className='cancel' type="button" onClick={() => { displayHandler(false)}}></Button>
+                            <Button title="Cancel" className='cancel' type="button" onClick={() => { displayHandler(false) }}></Button>
                         </div>
                     </form>
                 </div>
-            </div>
+           
         </PopUpWindow>
 
 
