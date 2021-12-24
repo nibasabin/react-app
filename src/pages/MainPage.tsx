@@ -12,6 +12,7 @@ export const MainPage = (mainPageProps: MainPageProps) => {
     return (
         <div className="root">
             <HeaderSection/>
+            <BodySection/>
         </div>
 
     )
