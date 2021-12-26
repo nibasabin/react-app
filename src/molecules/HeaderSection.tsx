@@ -31,7 +31,7 @@ export const HeaderSection = () => {
             displayModeTitle = 'Dark Mode View'
             setDisplayMode('DarkMode')
         } else {
-            root?.style.setProperty('background', '#F5F5F5');
+            root?.style.setProperty('background', '#f3f2ef');
             setDisplayMode('BrightMode')
             displayModeTitle = 'Bright Mode View';
         }

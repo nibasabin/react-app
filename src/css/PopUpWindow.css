@@ -14,7 +14,8 @@
 .closeButton {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 25px;
+  float:right;
   height: 25px;
   color: black;
   border: none;

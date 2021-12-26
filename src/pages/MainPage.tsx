@@ -9,11 +9,14 @@ interface MainPageProps {
 
 export const MainPage = (mainPageProps: MainPageProps) => {
     return (
-        <div className="root">
+        <div className='container-fluid'>
+        <div className="container root">
             <HeaderSection/>
             <BodySection/>
            
         </div>
+        </div>
+
 
     )
 }

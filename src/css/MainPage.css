@@ -1,8 +1,10 @@
 .root{
     height: 100vh;
-    background: '#F5F5F5';
    padding:10px;
     
+}
+#root{
+    background-color: #f3f2ef;
 }
 .pageContainer{
     display:flex;

@@ -25,7 +25,7 @@ export const PopUpWindow = ({ children, parentStateUpdater }: PopUpWindowProp): 
     return <>
         {isDisplayed && <div className='popUpContainer'>
             <div className='popUp'>
-            <div className='row headerImage'>
+            <div className='headerImage'>
                 <span className='closeButtonSpan'>
                 <Button  title='X' className='closeButton'type='Button' onClick={() => { return handelCloseButton() }}/>
                 </span>
