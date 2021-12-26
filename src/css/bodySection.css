@@ -1,0 +1,30 @@
+.bodySectionContainer{
+    display:flex;
+    height: 100vh;
+    width:100%;
+    /* background-color: rgba(74,74,74,0.5); */
+    color:white;
+    border-top-style: solid;
+    margin-top: 10px;
+    border-color: #fa7f21;
+    border-width: 1px;
+}
+
+.displayContainer{
+    width:70%;
+    height: 100vh;
+    padding: 15px;
+    /* background-color: red; */
+}
+
+.welcomeSection{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    background-image: url(../images/ironMan.gif) ;
+    background-size: cover;
+
+}
+.sectionBreaker{
+    height:15px;
+}

@@ -18,7 +18,7 @@ export const PopUpWindow = ({ children, parentStateUpdater }: PopUpWindowProp): 
 
     const handelCloseButton = () => {
         setIsDisplayValue(false);
-        if (undefined != parentStateUpdater) {
+        if (undefined !== parentStateUpdater) {
             parentStateUpdater(false);
         }
     }

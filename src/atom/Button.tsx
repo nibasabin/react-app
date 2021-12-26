@@ -7,6 +7,6 @@ interface ButtonProps {
     onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export const Button = (buttonProps: ButtonProps) => (
-<button className = {buttonProps.className} type =  {buttonProps.type} onClick =  {buttonProps.onClick}>{buttonProps.title}</button>  
+export const Button = ({title,type,className,onClick}: ButtonProps) => (
+<button className = {className} type =  {type} onClick =  {onClick}>{title}</button>  
 )

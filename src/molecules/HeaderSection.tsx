@@ -4,11 +4,15 @@ import { SignUpPage } from "../organisms/SignUpPage";
 import { useState } from 'react';
 import '../css/header.css';
 import { SocialMediaBar } from "../atom/SocialMediaBar";
+import rootBackground from '../images/background.jpg'
+import { ToggleButton } from "../atom/ToggleButton";
 
 
 export const HeaderSection = () => {
+    var displayModeTitle = 'Dark Mode View'
     const [showSignUpForm, setShowSignUpForm] = useState(false)
     const [logInButtonClicked, setLogInButtonClicked] = useState(false)
+    const [displayMode, setDisplayMode] = useState('BrightMode');
     function createUser() {
         console.log("signup button clicked", !showSignUpForm)
         setShowSignUpForm(!showSignUpForm)
@@ -18,14 +22,32 @@ export const HeaderSection = () => {
         console.log("login button clicked")
         setLogInButtonClicked(!setLogInButtonClicked)
     }
+    function changeMode() {
+        console.log("this is the mode", displayMode)
+        var root = document.getElementById('root');
+        console.log(root)
+        if (displayMode === 'BrightMode') {
+            root?.style.setProperty('background', '#2f2f2f');
+            displayModeTitle = 'Dark Mode View'
+            setDisplayMode('DarkMode')
+        } else {
+            root?.style.setProperty('background', '#F5F5F5');
+            setDisplayMode('BrightMode')
+            displayModeTitle = 'Bright Mode View';
+        }
 
+    }
     return (<>
-        <div className='header'>
-            <div className='row'>
+        <div className='headerContainer'>
+            <div className='header'>
+
                 <div className="col-6 leftColumn">
                     <SocialMediaBar />
                 </div>
                 <div className="col-6 rightColumn">
+                    <span className="toggleSwitchLabel"><label>Dark Mode</label></span>
+                    <ToggleButton className='toggleSwitch' onClick={() => changeMode()} />
+
                     <Button title="Sign Up" type="button" className="sign-up-button" onClick={() => { createUser() }} />
                     {
                         showSignUpForm && <SignUpPage displayHandler={setShowSignUpForm} />
@@ -33,6 +55,7 @@ export const HeaderSection = () => {
 
                     <Button title="Log In" type="button" className="login-button" onClick={() => { displayLoginPage() }} />
                     {logInButtonClicked && <LogInPage />}
+
                 </div>
             </div>
         </div>

@@ -1,6 +1,5 @@
-
-import { SocialMediaBar } from '../atom/SocialMediaBar';
 import { HeaderSection } from '../molecules/HeaderSection';
+import {BodySection} from '../molecules/BodySection';
 
 interface MainPageProps {
     title: string;
@@ -13,6 +12,7 @@ export const MainPage = (mainPageProps: MainPageProps) => {
         <div className="root">
             <HeaderSection/>
             <BodySection/>
+           
         </div>
 
     )

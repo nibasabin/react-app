@@ -20,7 +20,7 @@ export const SignUpPage = ({ displayHandler }: SignUpPageProp) => {
         const lastName = elements.lastName.value
         const dateOfBirth = elements.dateOfBirth.value
         const email = elements.emailId.value
-        console.log(firstName, " ", lastName, " Email ", email)
+        console.log(firstName, " ", lastName, " Email ", email, "DOB ",dateOfBirth)
     }
 
     return (

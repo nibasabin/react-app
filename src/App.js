@@ -1,6 +1,7 @@
 
-import './css/MainPage.css';
 import { MainPage } from './pages/MainPage.tsx';
+
+import './css/mainPage.css';
 
 
 function App() {

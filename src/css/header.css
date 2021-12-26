@@ -1,49 +1,64 @@
-.header {
-  height: 30px;
+.headerContainer {
+  height: auto;
   width: 100%;
    background-color: rgba(74,74,74,0.5); 
-  display: flex;
-  justify-content: center;
+  background-color: #fa7f21;
 }
-.header .row {
-    width:100%;
-    display:flex;
-    justify-content: end;
-    padding:2px;
-    
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  padding: 2px;
 }
 .leftColumn {
-height: 25px;
-/* background-color: yellow; */
-width: 230px;
-float:right;
-min-width: 100px;
-
+  height: 25px;
+  /* background-color: yellow; */
+  width: 230px;
+  float: right;
+  min-width: 100px;
 }
 .rightColumn {
-    height: 25px;
-    /* background-color: red; */
-    width: 150px;
-    display:flex;
-    justify-content: space-evenly;
-    min-width: 100px;
+  height: 25px;
+  /* background-color: red; */
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100px;
 }
 
 .sign-up-button,
-.login-button {
-  
-background : none; 
-border: none;
-color: white;
-font-size: 12px;
-font-family: sans-serif;
-font-weight: bold;
+.login-button,
+.change-mode-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
-@media screen and (max-width: 375px){
-    .rightColumn{
-        width:40%
+/* 
+@media screen and (max-width: 375px) {
+  .rightColumn {
+    width: 40%;
+  }
+  .leftColumn {
+    width: 60%;
+  }
+} */
+
+@media screen and (max-width:500px){
+    .header{
+        justify-content: center;
     }
-    .leftColumn{
-        width:60%;
-    }
+} 
+.toggleSwitch {
+  margin-top: 2px;
+}
+.toggleSwitchLabel{
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding:5px;
 }
