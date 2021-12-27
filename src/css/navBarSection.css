@@ -55,6 +55,7 @@ display: flex;
   font-family: 'Times New Roman', Times, serif;
   font-size:16px;
   font-weight: bold;
+  color:#264681;
 }
 .title{
   font-family: cursive;
@@ -78,11 +79,11 @@ display: flex;
 }
 
  li a:hover {
-  color:black;
+  color:#fa7f21;
 }
 
 .active{
-  color:#fa7f21 !important;
+  color:#264681 !important;
 }
 
 .hiddenIcon{
