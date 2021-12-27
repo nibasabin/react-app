@@ -3,16 +3,13 @@
   height: 100vh;
   padding: 15px;
   min-width:250px;
-  background-color: #fd7e145e;
+  background-color: #9f9b985e;
 
 }
 .menuBar {
   /* background-color: #fa7f21; */
   width: 100%;
-  border-width:2px;
-  border-style: solid;
   color:white;
-  background-color:#fa7f21;
   border-radius:50px;
   margin-top: 15px;
   display: flex;
@@ -40,17 +37,17 @@ display: flex;
   height: 150px;
   width: 150px;
   border-style: solid;
-  border-color: #fa7f21;
+  border-color: #f7f3f0;
   border-radius: 130px;  
 }
 
 .nameBlock {
   height: 45px;
   width: 100%;
-  background: #fa7f21;
+  /* background: #fa7f21; */
   border-radius: 25px;
   text-align: center;
-  color:white;
+  color:#fa7f21;
   display:flex;
   flex-direction: column;
 }
@@ -81,17 +78,17 @@ display: flex;
 }
 
  li a:hover {
-  color:rgb(17, 223, 17);
+  color:black;
 }
 
 .active{
-  color:black !important;
+  color:#fa7f21 !important;
 }
 
 .hiddenIcon{
   display:none;
 }
- @media screen and (max-width: 529px) {
+ @media screen and (max-width: 550px) {
 .menuBarContainer {
   display:none;
  }

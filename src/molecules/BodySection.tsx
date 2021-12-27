@@ -15,13 +15,7 @@ export const BodySection = () => {
         <NavBarSection/>
         <a href="#" className="hiddenIcon" onClick={()=>{showNavBarMenu()}}>&#9776;</a>
         <PageDisplaySection/>
-        {/* <div className='displayContainer'>
-            <div className="welcomeSection">
-                <img src='' alt="ironMan" />
-                <label> ! Today is ... day and you are looking at Sabin Raj Bajracharya's profile </label>
-            </div>
-            <div className='sectionBreaker'></div>
-        </div> */}
+        
     </div>)
 
 }

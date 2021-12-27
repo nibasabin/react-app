@@ -3,11 +3,7 @@
     height: 100vh;
     width:100%;
     /* background-color: rgba(74,74,74,0.5); */
-    color:white;
-    border-top-style: solid;
     margin-top: 10px;
-    border-color: #fa7f21;
-    border-width: 1px;
 }
 
 .displayContainer{
@@ -26,6 +22,12 @@
 
 }
 .sectionBreaker{
-    height:15px;
+    height:10px;
+    border:solid;
+    border-width: 1px;
+    border-color:#fa7f21;
+    border-right:none;
+    border-top:none;
+    border-left:none;
 }
 

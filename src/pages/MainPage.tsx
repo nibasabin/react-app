@@ -12,6 +12,7 @@ export const MainPage = (mainPageProps: MainPageProps) => {
         <div className='container-fluid'>
         <div className="container root">
             <HeaderSection/>
+            <div className='sectionBreaker'></div>
             <BodySection/>
            
         </div>

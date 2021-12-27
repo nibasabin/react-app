@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
 import '../css/pageDisplaySection.css';
+import { HomePage } from "../pages/HomePage";
 export const PageDisplaySection = () => {
 
     const appContext= useContext(AppContext);
@@ -15,7 +16,7 @@ return (
     <div className='pageDisplayContainer'>
         <div className='pageDisplay'>
             {
-                homePage && <div className ='homePage'><span>this is homepage </span></div>
+                homePage && <HomePage/>
             }
                         {
                 aboutPage && <div className ='aboutPage'><span>this is aboutPage </span></div>
