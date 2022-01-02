@@ -4,7 +4,7 @@
     
 }
 #root{
-    background-color: #f3f2ef;
+    /* background-color: #f3f2ef; */
 }
 .pageContainer{
     display:flex;
@@ -37,4 +37,7 @@ padding:0px;
     background-color: rgb(123, 104, 231);
     height:35px;
     position:relative;
+}
+body{
+    background:#f3f2ef
 }

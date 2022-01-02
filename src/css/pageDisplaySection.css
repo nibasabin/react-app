@@ -1,6 +1,7 @@
 .pageDisplayContainer{
     width:100%;
     padding-left:5px;
+    overflow: scroll;
 }
 .homePage{
 

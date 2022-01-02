@@ -23,15 +23,12 @@ export const HeaderSection = () => {
         setLogInButtonClicked(!setLogInButtonClicked)
     }
     function changeMode() {
-        console.log("this is the mode", displayMode)
-        var root = document.getElementById('root');
-        console.log(root)
         if (displayMode === 'BrightMode') {
-            root?.style.setProperty('background', '#2f2f2f');
+            document.body.style.backgroundColor='#2f2f2f';
             displayModeTitle = 'Dark Mode View'
             setDisplayMode('DarkMode')
         } else {
-            root?.style.setProperty('background', '#f3f2ef');
+            document.body.style.backgroundColor= '#f3f2ef';
             setDisplayMode('BrightMode')
             displayModeTitle = 'Bright Mode View';
         }

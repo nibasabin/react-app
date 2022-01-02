@@ -2,87 +2,14 @@ import { useContext } from 'react';
 import { AppContext } from "../contexts/AppContext";
 import '../css/navBarSection.css';
 import profilePic from '../images/nibasabin.jpg';
-import { PageDisplayStateProp } from "../interfaces/PageDisplayStateProp";
 
 export const NavBarSection = () => {
 
     const appContext = useContext(AppContext);
     const handelPageClick = (event: any) => {
-        const pageDisplayState: PageDisplayStateProp = {
-            homePage: false,
-            aboutPage: false,
-            contactPage: false,
-            skillsPage: false,
-            educationPage: false,
-            experiencePage: false
-        }
-
-
-
-
-        switch (event.target.title) {
-            case 'homePage': {
-                pageDisplayState.homePage = true;
-                pageDisplayState.aboutPage = false;
-                pageDisplayState.contactPage = false;
-                pageDisplayState.educationPage = false;
-                pageDisplayState.experiencePage = false;
-                pageDisplayState.skillsPage = false;
-                appContext.setPageDisplayState(pageDisplayState)
-                break;
-            }
-            case 'aboutPage': {
-                pageDisplayState.homePage = false;
-                pageDisplayState.aboutPage = true;
-                pageDisplayState.contactPage = false;
-                pageDisplayState.educationPage = false;
-                pageDisplayState.experiencePage = false;
-                pageDisplayState.skillsPage = false;
-                appContext.setPageDisplayState(pageDisplayState)
-                break;
-            }
-            case 'skillsPage': {
-                pageDisplayState.homePage = false;
-                pageDisplayState.aboutPage = false;
-                pageDisplayState.contactPage = false;
-                pageDisplayState.educationPage = false;
-                pageDisplayState.experiencePage = false;
-                pageDisplayState.skillsPage = true;
-                appContext.setPageDisplayState(pageDisplayState)
-                break;
-            }
-            case 'educationPage': {
-                pageDisplayState.homePage = false;
-                pageDisplayState.aboutPage = false;
-                pageDisplayState.contactPage = false;
-                pageDisplayState.educationPage = true;
-                pageDisplayState.experiencePage = false;
-                pageDisplayState.skillsPage = false;
-                appContext.setPageDisplayState(pageDisplayState)
-                break;
-            }
-            case 'experiencePage': {
-                pageDisplayState.homePage = false;
-                pageDisplayState.aboutPage = false;
-                pageDisplayState.contactPage = false;
-                pageDisplayState.educationPage = false;
-                pageDisplayState.experiencePage = true;
-                pageDisplayState.skillsPage = false;
-                appContext.setPageDisplayState(pageDisplayState)
-                break;
-            }
-            default: {
-                pageDisplayState.homePage = false;
-                pageDisplayState.aboutPage = false;
-                pageDisplayState.contactPage = true;
-                pageDisplayState.educationPage = false;
-                pageDisplayState.experiencePage = false;
-                pageDisplayState.skillsPage = false;
-                appContext.setPageDisplayState(pageDisplayState)
-            }
-        }
-        console.log("this is the event", event.target.title);
-
+        var element_to_scroll_to = document.getElementById(event.target.title);
+        element_to_scroll_to?.scrollIntoView({behavior:"smooth"});
+    
     }
     return (
         <div id='menuBarContainer' className='menuBarContainer'>

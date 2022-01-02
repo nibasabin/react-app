@@ -1,0 +1,10 @@
+.footerContainer {
+    height: 150px;
+    background: #1c345e;
+    color:#fa7f21;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align:center;
+    justify-content: flex-end;
+}

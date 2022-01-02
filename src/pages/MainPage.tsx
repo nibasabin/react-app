@@ -1,5 +1,6 @@
 import { HeaderSection } from '../molecules/HeaderSection';
 import {BodySection} from '../molecules/BodySection';
+import { FooterSection } from '../molecules/FooterSection';
 
 interface MainPageProps {
     title: string;
@@ -14,6 +15,7 @@ export const MainPage = (mainPageProps: MainPageProps) => {
             <HeaderSection/>
             <div className='sectionBreaker'></div>
             <BodySection/>
+            <FooterSection/>
            
         </div>
         </div>

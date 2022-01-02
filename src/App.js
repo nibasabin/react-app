@@ -1,7 +1,7 @@
 
 import { MainPage } from './pages/MainPage.tsx';
 
-import './css/mainPage.css';
+import './css/pages/mainPage.css';
 import AppContextProvider from './contexts/AppContext';
 
 
